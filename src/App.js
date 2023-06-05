@@ -6,13 +6,12 @@ import "./index.css";
 // import './script.js';
 
 function App() {
-  const [showUnrealEngine, setShowUnrealEngine] = useState(false);
   const [showGraphs, setShowGraphs] = useState(false);
   const handleButtonClick = () => {
     // setShowUnrealEngine(true);
     setShowGraphs(!showGraphs);
   };
-  const [state, setState] = useState({
+  const [state] = useState({
     options: {
       colors: ["#E91E63", "#FF9800"],
       chart: {
